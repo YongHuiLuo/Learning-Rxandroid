@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomView">
+        <attr name="paint_color" format="integer"></attr>
+    </declare-styleable>
+</resources>
