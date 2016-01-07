@@ -1,16 +1,42 @@
 package com.tiny.learning_rxandroid;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
-public class MainActivity extends AppCompatActivity {
+import java.text.Collator;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+
+    private static final String CATEGORY_EXAMPLE = MainActivity.class.getPackage().getName();
+    private ListView mlist;
+
+    private static final Comparator<Map<String, Object>> DISPLAY_NAME_COMPARABLE = new Comparator<Map<String, Object>>() {
+        private final Collator mCollator = Collator.getInstance();
+
+        @Override
+        public int compare(Map<String, Object> lhs, Map<String, Object> rhs) {
+            return mCollator.compare(lhs.get("className"), rhs.get("className"));
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mlist = (ListView) findViewById(R.id.method_list);
+        mlist.setOnItemClickListener(this);
     }
 
 
@@ -34,5 +60,33 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private List<Map<String, Object>> getData() {
+        List<Map<String, Object>> data = new ArrayList<>();
+
+        Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
+        mainIntent.setPackage(getApplicationContext().getPackageName());
+        mainIntent.addCategory(CATEGORY_EXAMPLE);
+
+        PackageManager pm = getPackageManager();
+        List<ResolveInfo> list = pm.queryIntentActivities(mainIntent, 0);
+
+        if (list == null) {
+            return data;
+        }
+
+        for (ResolveInfo info : list) {
+            CharSequence labelSep = info.loadLabel(pm);
+            String label = labelSep != null ? labelSep.toString() : info.activityInfo.name;
+
+
+        }
+      return data;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
     }
 }
