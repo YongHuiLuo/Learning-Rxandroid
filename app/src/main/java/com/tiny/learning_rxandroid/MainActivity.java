@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
         mlist = (ListView) findViewById(R.id.method_list);
         mlist.setOnItemClickListener(this);
+        getData();
     }
 
 
@@ -80,9 +81,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             CharSequence labelSep = info.loadLabel(pm);
             String label = labelSep != null ? labelSep.toString() : info.activityInfo.name;
 
-
         }
-      return data;
+        return data;
     }
 
     @Override

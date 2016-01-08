@@ -19,23 +19,86 @@
 
         <activity
             android:name=".RxJavaActivity"
-            android:screenOrientation="portrait" />
+            android:label="@string/title_rxjava_example_activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
+            </intent-filter>
 
-        <activity android:name=".ComposeExampleActivity" />
+        </activity>
 
-        <activity android:name=".FlatMapExampleActivity" />
+        <activity android:name=".ComposeExampleActivity"
+            android:label="@string/title_compose_example_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
 
-        <activity android:name=".LiftExampleActivity" />
+            </intent-filter>
+        </activity>
 
-        <activity android:name=".MapExampleActivity" />
+        <activity android:name=".FlatMapExampleActivity"
+            android:label="@string/title_flatmap_example_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
+            </intent-filter>
+        </activity>
 
-        <activity android:name=".SchedulerExampleActivity" />
+        <activity android:name=".LiftExampleActivity"
+            android:label="@string/title_lift_example_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
 
-        <activity android:name=".ThrottleFirstExampleActivity" />
+            </intent-filter>
 
-        <activity android:name=".RxBaseExampleActivity" />
+        </activity>
 
-        <activity android:name=".UsageExampleActivity" />
+        <activity android:name=".MapExampleActivity"
+            android:label="@string/title_map_example_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SchedulerExampleActivity"
+            android:label="@string/title_scheduler_example_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ThrottleFirstExampleActivity"
+            android:label="@string/title_throttle_first_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".RxBaseExampleActivity"
+            android:label="@string/title_rxbase_example_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".UsageExampleActivity"
+            android:label="@string/usage_example_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.tiny.learning_rxandroid" />
+
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
