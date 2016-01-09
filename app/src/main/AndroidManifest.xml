@@ -20,6 +20,7 @@
         <activity
             android:name=".RxJavaActivity"
             android:label="@string/title_rxjava_example_activity"
+            android:description="@string/rx_android_description"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

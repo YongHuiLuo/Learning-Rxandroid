@@ -12,4 +12,5 @@
     <string name="title_throttle_first_activity">ThrottleFirstExampleActivity</string>
     <string name="title_rxbase_example_activity">RxBaseExampleActivity</string>
     <string name="usage_example_activity">UsageExampleActivity</string>
+    <string name="rx_android_description">RxJavaActivityDesc</string>
 </resources>
