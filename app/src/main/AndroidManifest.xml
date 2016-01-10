@@ -9,6 +9,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +20,7 @@
 
         <activity
             android:name=".RxBaseExampleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_rxbase_example_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +31,7 @@
 
         <activity
             android:name=".UsageExampleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/usage_example_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +42,7 @@
 
         <activity
             android:name=".SchedulerExampleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_scheduler_example_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,6 +53,7 @@
 
         <activity
             android:name=".MapExampleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_map_example_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -59,6 +64,7 @@
 
         <activity
             android:name=".FlatMapExampleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_flatmap_example_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -68,6 +74,7 @@
 
         <activity
             android:name=".ThrottleFirstExampleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_throttle_first_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -78,6 +85,7 @@
 
         <activity
             android:name=".LiftExampleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_lift_example_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -88,6 +96,7 @@
 
         <activity
             android:name=".ComposeExampleActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_compose_example_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

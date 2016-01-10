@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mList = (ListView) findViewById(R.id.method_list);
         mList.setOnItemClickListener(this);
         refreshData();
-
     }
 
     private void refreshData() {

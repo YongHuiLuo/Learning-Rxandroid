@@ -13,8 +13,8 @@ import rx.Subscriber;
  */
 public class ComposeExampleActivity extends AppCompatActivity{
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         composeExample();
     }

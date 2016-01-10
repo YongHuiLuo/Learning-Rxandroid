@@ -22,8 +22,8 @@ public class ThrottleFirstExampleActivity extends AppCompatActivity {
     private Button click_me;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_throttle_frist_example);
         click_me = (Button) findViewById(R.id.click_me);
         throttleFirstExample();
@@ -36,7 +36,7 @@ public class ThrottleFirstExampleActivity extends AppCompatActivity {
                 .subscribe(new Action1<Void>() {
                     @Override
                     public void call(Void aVoid) {
-                        Toast.makeText(getBaseContext(), "Clicking", Toast.LENGTH_LONG);
+                        Toast.makeText(getBaseContext(), "Clicking", Toast.LENGTH_LONG).show();
                     }
                 });
     }

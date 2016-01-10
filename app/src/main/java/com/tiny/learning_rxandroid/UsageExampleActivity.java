@@ -22,8 +22,8 @@ public class UsageExampleActivity extends AppCompatActivity {
     private ImageView img_rx;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usage_example);
         img_rx = (ImageView) findViewById(R.id.img_rx);
         usageExample();

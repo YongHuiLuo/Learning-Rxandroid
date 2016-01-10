@@ -21,8 +21,8 @@ public class FlatMapExampleActivity extends AppCompatActivity {
     private static final String TAG = FlatMapExampleActivity.class.getSimpleName();
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         flatMapExample();
     }
 

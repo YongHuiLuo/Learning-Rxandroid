@@ -25,8 +25,8 @@ public class MapExampleActivity extends AppCompatActivity {
     private ImageView img_rx_2;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map_example);
         img_rx_2 = (ImageView) findViewById(R.id.img_rx_2);
         mapExample();

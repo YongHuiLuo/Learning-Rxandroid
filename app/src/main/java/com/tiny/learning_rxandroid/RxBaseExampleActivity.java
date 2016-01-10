@@ -20,8 +20,8 @@ public class RxBaseExampleActivity extends AppCompatActivity {
     private static final String TAG = RxBaseExampleActivity.class.getSimpleName();
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         rxBaseExample();
     }
 

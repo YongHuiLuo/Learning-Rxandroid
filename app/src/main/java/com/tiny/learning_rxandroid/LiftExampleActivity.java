@@ -12,8 +12,8 @@ import rx.Subscriber;
  */
 public class LiftExampleActivity extends AppCompatActivity {
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         liftExample();
     }
 
