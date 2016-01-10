@@ -3,4 +3,14 @@
     <string name="hello_world">The commonly used methods of RxAndroid</string>
     <string name="action_settings">Settings</string>
     <string name="click_me">ClickMe</string>
+    <string name="title_compose_example_activity">ComposeExampleActivity</string>
+    <string name="title_rxjava_example_activity">RxJavaActivity</string>
+    <string name="title_flatmap_example_activity">FlatMapExampleActivity</string>
+    <string name="title_lift_example_activity">LiftExampleActivity</string>
+    <string name="title_map_example_activity">MapExampleActivity</string>
+    <string name="title_scheduler_example_activity">SchedulerExampleActivity</string>
+    <string name="title_throttle_first_activity">ThrottleFirstExampleActivity</string>
+    <string name="title_rxbase_example_activity">RxBaseExampleActivity</string>
+    <string name="usage_example_activity">UsageExampleActivity</string>
+    <string name="rx_android_description">RxJavaActivityDesc</string>
 </resources>
