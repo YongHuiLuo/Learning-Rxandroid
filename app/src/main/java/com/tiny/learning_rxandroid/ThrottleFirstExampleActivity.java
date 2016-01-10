@@ -32,7 +32,7 @@ public class ThrottleFirstExampleActivity extends AppCompatActivity {
     private void throttleFirstExample() {
         //有点 ： 防暴力点击的
         RxView.clicks(click_me)
-                .throttleFirst(1000, TimeUnit.MILLISECONDS) // 设置防抖间隔为 1000ms
+                .throttleFirst(3000, TimeUnit.MILLISECONDS) // 设置防抖间隔为 3000ms
                 .subscribe(new Action1<Void>() {
                     @Override
                     public void call(Void aVoid) {

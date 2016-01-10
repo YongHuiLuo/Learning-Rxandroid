@@ -50,7 +50,6 @@ public class UsageExampleActivity extends AppCompatActivity {
         /**
          * 2、由资源ID取得图片并展示
          */
-        img_rx = (ImageView) findViewById(R.id.img_rx);
         Observable.create(new Observable.OnSubscribe<Drawable>() {
             @Override
             public void call(Subscriber<? super Drawable> subscriber) {

@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import rx.Observable;
 import rx.Observer;
 import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
@@ -36,8 +37,9 @@ public class SchedulerExampleActivity extends AppCompatActivity {
                 subscriber.onNext(drawable);
                 subscriber.onCompleted();
             }
-        }).subscribeOn(Schedulers.io())
-                .observeOn(Schedulers.io())
+        })
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<Drawable>() {
                     @Override
                     public void onCompleted() {
