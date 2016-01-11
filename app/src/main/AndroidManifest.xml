@@ -99,7 +99,7 @@
             android:label="@string/title_scheduler_multi_example_activity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="ANDROID.INTENT.ACTION.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.tiny.learning_rxandroid" />
             </intent-filter>
         </activity>
